@@ -8,3 +8,9 @@
   cursor: pointer;
   margin-right: 10px;
 }
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}

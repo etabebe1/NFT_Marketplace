@@ -139,7 +139,11 @@ function Navbar() {
               </div>
             )}
           </i>
-          <Button btnName={"connect wallet"}></Button>
+
+          {/* Button container */}
+          <div className="nav-btn">
+            <Button btnName={"connect wallet"}></Button>
+          </div>
 
           {/* Profile */}
           <div className="profile-dropdown">
@@ -151,7 +155,7 @@ function Navbar() {
             />
 
             {profile && (
-              <div className="absolute to-right">
+              <div className="absolute to-right center-on-mobile">
                 <Profile></Profile>
               </div>
             )}
@@ -160,20 +164,18 @@ function Navbar() {
         {/* Navbar right end */}
 
         {/* Navbar menu button */}
-        {/* <div className="navbar-right-menuBtn">
+        <div className="navbar-right-menuBtn">
           <CgMenuRight
             className="menuIcon"
             onClick={() => openSideBar()}
           ></CgMenuRight>
-        </div> */}
+        </div>
       </div>
 
       {/* Sidebar component on mobile */}
-      {openSideMenu && (
-        <div className="sidebar-container">
-          <SideBar setOpenSideMenu={setOpenSideMenu}></SideBar>
-        </div>
-      )}
+      <div className={`sidebar-container ${openSideMenu && "open"}`}>
+        <SideBar setOpenSideMenu={setOpenSideMenu}></SideBar>
+      </div>
     </nav>
   );
 }

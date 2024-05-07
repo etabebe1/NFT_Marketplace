@@ -1,0 +1,136 @@
+.sidebar-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #333;
+}
+
+.sidebar-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-block-start: 30px;
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-block: 15px;
+}
+
+.company-description {
+  margin-block: 10px;
+  font-size: 14px;
+  color: #666;
+  text-align: start;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-block: 10px;
+}
+
+.social-media-links i {
+  cursor: pointer;
+}
+
+.social-media-links i:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.sidebar-navigation {
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.sidebar-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sidebar-btn {
+  background-color: #3b5998;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Accordion */
+.accordion-item {
+  margin-block: 10px;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.accordion-title .title {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 500;
+}
+
+.accordion-title .dropdown-arrow.rotate {
+  transform: rotate(180deg);
+  transition: all;
+}
+
+.accordion-content {
+  padding: 0 15px;
+  border-top: none;
+  border-radius: 4px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-content.show {
+  max-height: 115px;
+}
+
+.accordion-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  height: 300px;
+}
+
+.accordion-item li {
+  margin-bottom: 5px;
+}
+
+.accordion-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  font-size: small;
+}

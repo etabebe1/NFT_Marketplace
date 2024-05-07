@@ -68,3 +68,9 @@
 .profile-actions li span {
   font-size: 14px;
 }
+
+@media (max-width: 768px) {
+  .profile-card {
+    width: 15rem;
+  }
+}
