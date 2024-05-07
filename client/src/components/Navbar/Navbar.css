@@ -26,6 +26,7 @@
 }
 .navbar-right {
   gap: 35px;
+  position: relative;
 }
 
 .navbar-right .nav-bar-log-container,
@@ -82,4 +83,18 @@
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;
+}
+
+.profile-dropdown .to-right {
+  right: 0;
+}
+
+.absolute.to-left {
+  position: absolute;
+  left: 0; /* Positioned to the right */
 }

@@ -110,7 +110,7 @@ function Navbar() {
             </p>
 
             {discover && (
-              <div className="navbar-right-discover-box">
+              <div className="navbar-right-discover-box absolute">
                 <Discover></Discover>
               </div>
             )}
@@ -123,7 +123,7 @@ function Navbar() {
             </p>
 
             {helpCenter && (
-              <div className="navbar-right-help-center-box">
+              <div className="navbar-right-help-center-box absolute">
                 <HelpCenter></HelpCenter>
               </div>
             )}
@@ -133,7 +133,11 @@ function Navbar() {
           <i className="notification">
             <FaBell onClick={() => openNotification()}></FaBell>
 
-            {notification && <Notification></Notification>}
+            {notification && (
+              <div className="absolute to-left">
+                <Notification></Notification>
+              </div>
+            )}
           </i>
           <Button btnName={"connect wallet"}></Button>
 
@@ -146,18 +150,22 @@ function Navbar() {
               onClick={() => openProfile()}
             />
 
-            {profile && <Profile></Profile>}
+            {profile && (
+              <div className="absolute to-right">
+                <Profile></Profile>
+              </div>
+            )}
           </div>
         </div>
         {/* Navbar right end */}
 
         {/* Navbar menu button */}
-        <div className="navbar-right-menuBtn">
+        {/* <div className="navbar-right-menuBtn">
           <CgMenuRight
             className="menuIcon"
             onClick={() => openSideBar()}
           ></CgMenuRight>
-        </div>
+        </div> */}
       </div>
 
       {/* Sidebar component on mobile */}

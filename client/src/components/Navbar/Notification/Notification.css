@@ -1,0 +1,96 @@
+.notification-card-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 10px 5px;
+  margin: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #fff;
+  text-align: start;
+  width: 19rem;
+  height: 100%;
+
+  box-shadow: var(--box-shadow);
+  background-color: var(--shadow-dark-color-2);
+}
+
+.notification-card-list .notification-title {
+  font-size: medium;
+  font-weight: 500;
+  padding: 20px 5px;
+}
+
+.notification-list-container {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.notification-card-list li {
+  padding: 5px;
+  color: var(--text-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* list hover effect */
+
+.notification-card-list li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.details-status-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notification-card-list li {
+  display: flex;
+  gap: 15px;
+}
+.notification-card-list li:hover {
+  background-color: var(--color-gray-dark);
+  color: var(--text-color-converse);
+}
+
+.notification-card-list li .details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.notification-card-list li .details p {
+  color: var(--text-color-secondary);
+}
+
+.notification-card-list li .details .name {
+  color: var(--text-color-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.notification-card-list li .details .message {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 10rem;
+}
+
+.notification-card-list li .details .very-small {
+  color: var(--text-color-tertiary);
+  font-size: 0.7rem;
+}
+
+.details-status-container .status {
+  color: var(--online);
+}

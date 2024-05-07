@@ -1,3 +1,32 @@
-.navbar-right-discover-box {
+.discover-card-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 10px 5px;
+  margin: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: var(--shadow-dark-color);
+  text-align: start;
+  width: 12rem;
+  height: 100%;
+
   box-shadow: var(--box-shadow);
+  background-color: var(--shadow-dark-color-2);
+}
+
+.discover-card-list li {
+  padding: 5px;
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.discover-card-list li:hover {
+  background-color: var(--color-gray-dark);
+  color: var(--text-color-converse);
 }

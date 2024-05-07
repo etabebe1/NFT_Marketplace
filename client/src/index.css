@@ -4,19 +4,38 @@
   --text-color: #333;
   --text-color-converse: #eeeeee;
   --shadow-dark-color: #d3dae7;
-  --shadow-light-color: #ffffff;
-  --background-color: #f0f0f0;
+  --shadow-dark-color-2: #dfe3eb;
+  --shadow-light-color: #fff;
+  --background-color: #ecf0f3;
+  --online: green;
 
-  --box-shadow: 1rem 1rem 1rem
-    var(
-      var(--shadow-dark-color),
-      -1rem -1rem 1rem var(var(--shadow-dark-color))
-    );
-  --box-shadow-2: 0rem 0rem 0rem
-    var(
-      var(--shadow-dark-color),
-      -0.3rem -0.3rem 1rem var(var(--shadow-dark-color))
-    );
+  --box-shadow: 1rem 1rem 1rem var(--shadow-light-color),
+    -1rem -0rem 1rem var(--shadow-light-color);
+  --box-shadow-2: 1rem 1rem 1rem var(--shadow-dark-color),
+    -1rem -1rem 1rem var(--shadow-light-color);
+  --box-shadow-3: 0rem 0rem 0rem var(--shadow-dark-color),
+    -0.3rem -0.3rem 1rem var(--shadow-light-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
 }
 
 body {

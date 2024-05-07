@@ -3,6 +3,7 @@
   border: none;
   border-radius: 100px;
   background-color: var(--color-gray-dark);
+  box-shadow: var(--box-shadow-2);
   color: var(--text-color-converse);
   cursor: pointer;
   margin-right: 10px;
