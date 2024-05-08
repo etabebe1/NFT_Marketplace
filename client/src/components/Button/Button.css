@@ -8,6 +8,7 @@
   color: var(--text-color-converse);
   cursor: pointer;
   margin-right: 10px;
+  width: fit-content;
 }
 
 .btn:hover {

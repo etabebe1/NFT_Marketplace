@@ -2,8 +2,8 @@ import React from "react";
 
 // INTERNAL IMPORT
 import "./SideBar.css";
-import images from "../../../assets/img/z-index";
-import { Button } from "../../z-index-component";
+import images from "../../../assets/img/z-index.img";
+import { Button } from "../../z-index.component";
 
 import { IoClose } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa";

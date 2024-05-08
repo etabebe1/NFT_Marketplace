@@ -2,7 +2,7 @@ import React from "react";
 
 // INTERNAL IMPORT
 import "./Footer.css";
-import images from "../../assets/img/z-index";
+import images from "../../assets/img/z-index.img";
 
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -10,7 +10,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 
-import Button from "../Button/Button";
+import {Button} from "../z-index.component";
 
 const discoverData = [
   { name: "Collection", link: "" },

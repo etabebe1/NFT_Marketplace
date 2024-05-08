@@ -9,8 +9,8 @@ import {
   Profile,
   SideBar,
 } from "./z-index";
-import { Button } from "../z-index-component";
-import images from "../../assets/img/z-index";
+import { Button } from "../z-index.component";
+import images from "../../assets/img/z-index.img";
 
 import { FaBell } from "react-icons/fa6";
 import { IoMdSearch } from "react-icons/io";

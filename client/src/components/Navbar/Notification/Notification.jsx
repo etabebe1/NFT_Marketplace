@@ -2,7 +2,7 @@ import React from "react";
 
 // INTERNAL IMPORT
 import "./Notification.css";
-import images from "../../../assets/img/z-index";
+import images from "../../../assets/img/z-index.img";
 import { GoDotFill } from "react-icons/go";
 import { GoDot } from "react-icons/go";
 

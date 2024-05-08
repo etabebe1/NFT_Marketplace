@@ -1,16 +1,13 @@
 import "./App.css";
-import { Navbar, Footer } from "./components/z-index-component";
+import { Navbar, Footer } from "./components/z-index.component";
+import { Home } from "./pages/z-index.page";
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
       {/* components here  */}
-      <div>dhfkjhdfg</div>
-      <div>dhfkjhdfg</div>
-      <div>dhfkjhdfg</div>
-      <div>dhfkjhdfg</div>
-      <div>dhfkjhdfg</div>
+      <Home></Home>
       <Footer></Footer>
     </div>
   );

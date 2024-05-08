@@ -2,7 +2,7 @@ import React from "react";
 
 // INTERNAL IMPORT
 import "./Profile.css";
-import images from "../../../assets/img/z-index";
+import images from "../../../assets/img/z-index.img";
 
 import { IoHome } from "react-icons/io5";
 import { RiTeamFill } from "react-icons/ri";
