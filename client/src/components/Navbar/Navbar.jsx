@@ -134,7 +134,7 @@ function Navbar() {
             <FaBell onClick={() => openNotification()}></FaBell>
 
             {notification && (
-              <div className="absolute to-left">
+              <div className="absolute notification-left">
                 <Notification></Notification>
               </div>
             )}

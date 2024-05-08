@@ -1,9 +1,9 @@
-@media (max-width: 768px) {
-  .home {
-    margin-block-start: 80px;
-  }
+.home {
+  margin-block-start: 50px; /* Generic style applied first */
 }
 
-.home {
-  margin-block-start: 100px;
+@media (max-width: 768px) {
+  .home {
+    margin-block-start: 0px; /* Override for mobile screens */
+  }
 }
