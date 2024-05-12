@@ -84,7 +84,7 @@ function Filter() {
             </div>
             <div class="custom-button fill" onClick={() => {}}>
               <i>
-                <FaVideo />
+                <BsPersonFill />
               </i>
               <p>Verified</p>
               <i className="check-icon">
