@@ -8,6 +8,7 @@ import {
   Service,
   NFTSlider,
   Subscribe,
+  Title,
 } from "../../components/z-index.component";
 
 function Home() {
@@ -17,6 +18,10 @@ function Home() {
       <Service></Service>
       <NFTSlider></NFTSlider>
       <Subscribe></Subscribe>
+      <Title
+        heading={"Browse by category"}
+        paragraph={"Explore the NFTs in the most featured categories."}
+      ></Title>
     </div>
   );
 }
