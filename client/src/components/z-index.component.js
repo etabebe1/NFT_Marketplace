@@ -7,6 +7,7 @@ import NFTSlider from "./NFTSlider/NFTSlider";
 import Subscribe from "./Subscribe/Subscribe";
 import Title from "./Title/Title";
 import Category from "./Category/Category";
+import Filter from "./Filter/Filter";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Title,
   Category,
   Footer,
+  Filter,
 };

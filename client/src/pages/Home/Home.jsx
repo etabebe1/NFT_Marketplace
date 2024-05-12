@@ -10,6 +10,7 @@ import {
   Subscribe,
   Title,
   Category,
+  Filter,
 } from "../../components/z-index.component";
 
 function Home() {
@@ -18,6 +19,11 @@ function Home() {
       <Hero></Hero>
       <Service></Service>
       <NFTSlider></NFTSlider>
+      <Title
+        heading={"Featured NFTs"}
+        paragraph={"Discover the most outstanding NFTs in all topics of life."}
+      ></Title>
+      <Filter></Filter>
       <Title
         heading={"Browse by category"}
         paragraph={"Explore the NFTs in the most featured categories."}
