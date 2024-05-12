@@ -33,7 +33,6 @@
 .service-content p,
 .service-content h4 {
   margin-bottom: 10px;
-
 }
 
 .service-content :nth-child(1) {
@@ -43,7 +42,7 @@
   border-radius: 100px;
   padding: 4px;
   color: var(--text-color-converse);
-  box-shadow: var(--box-shadow-2)
+  box-shadow: var(--box-shadow-2);
 }
 
 .service-content h4 {
@@ -54,4 +53,24 @@
 .service-content p {
   font-size: 14px;
   line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .service-section {
+    max-width: 100%;
+    padding: 10px 0;
+  }
+
+  .service-item {
+    max-width: 200px;
+  }
+
+  .service-item img {
+    transform: scale(0.8);
+    margin-bottom: 0px;
+  }
+
+  .service-content p {
+    transform: scale(0.8);
+  }
 }

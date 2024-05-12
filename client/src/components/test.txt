@@ -1,0 +1,47 @@
+   <div className="nft-slide-container">
+        <div className="nft-info">
+          <h3 className="nft-title">{sliderData[currentIndex].title}</h3>
+          <div className="nft-details">
+            <div className="creator-profile">
+              <img
+                src={sliderData[currentIndex].image}
+                alt={sliderData[currentIndex].name}
+              />
+              <span>{sliderData[currentIndex].name}</span>
+            </div>
+            <div className="collection">
+              {sliderData[currentIndex].collection}
+            </div>
+          </div>
+          <div className="nft-price">
+            <span className="current-bid">
+              Current Bid: {sliderData[currentIndex].price}
+            </span>
+            <span className="price">
+              Price: {sliderData[currentIndex].price}
+            </span>
+          </div>
+          <div className="auction-ending">
+            <span>Auction Ending In:</span>
+            <span>
+              {sliderData[currentIndex].time.days}d{" "}
+              {sliderData[currentIndex].time.hours}h{" "}
+              {sliderData[currentIndex].time.minutes}m
+            </span>
+          </div>
+          <div className="nft-buttons">
+            <Button text="Place Bid" />
+            <Button text="View Details" />
+          </div>
+          <button className="nft-slider-button prev" onClick={handlePrevSlide}>
+            <i className="fas fa-chevron-left"></i>{" "}
+            {/* Assuming Font Awesome icon */}
+          </button>
+          <button className="nft-slider-button next" onClick={handleNextSlide}>
+            <i className="fas fa-chevron-right"></i>{" "}
+            {/* Assuming Font Awesome icon */}
+          </button>
+        </div>
+
+        <div className="nft-images"></div>
+      </div>
