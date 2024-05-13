@@ -12,16 +12,16 @@ function Category() {
     <div className="card-container">
       {cards.map((card, index) => {
         return (
-          <div className="card">
+          <div className="card" key={index + 1}>
             <img
               src={images.creatorbackground1}
               alt="Card_Image"
               className="card-image"
             />
             <div className="card-content">
-                <i>
-                  <SiDocsdotrs />
-                </i>
+              <i>
+                <SiDocsdotrs />
+              </i>
               <div className="aside">
                 <h5>Entertainment</h5>
                 <p>1995 NFT</p>

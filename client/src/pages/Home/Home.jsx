@@ -12,6 +12,7 @@ import {
   Category,
   Filter,
   NFTCard,
+  Collection,
 } from "../../components/z-index.component";
 
 function Home() {
@@ -20,6 +21,11 @@ function Home() {
       <Hero />
       <Service />
       <NFTSlider />
+      <Title
+        heading={"New Collection"}
+        paragraph={"Discover NFTs available on the market."}
+      />
+      <Collection />
       <Title
         heading={"Featured NFTs"}
         paragraph={"Discover the most outstanding NFTs in all topics of life."}

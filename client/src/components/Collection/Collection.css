@@ -1,0 +1,84 @@
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.collection_title {
+  text-align: center;
+  margin-bottom: 30px; /* Increased spacing between title and buttons */
+}
+
+.collection_title h2 {
+  font-size: 2rem; /* Adjust heading font size */
+  font-weight: bold; /* Bold text */
+  margin: 0; /* Remove default margin */
+}
+
+.collection_collections {
+  display: flex;
+  /* Removed flex-wrap: wrap; for desktop to prevent buttons from wrapping */
+  justify-content: center; /* Center buttons horizontally */
+  margin: 0 auto; /* Center buttons horizontally within the container */
+  gap: 55px;
+  box-shadow: var(--box-shadow-2);
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 100px;
+}
+
+.collection_collections_btn {
+  /* Reduce button size and padding */
+  padding: 15px 25px;
+  font-size: 1.2rem; /* Adjust font size as needed */
+  border-radius: 100px; /* Change to desired corner style */
+  cursor: pointer; /* Indicate clickable buttons */
+  background: var(--color-gray-dark);
+}
+
+.collection_collections_btn button {
+  background-color: transparent; /* Transparent button background */
+  border: none; /* Remove default button border */
+  /* Button text size already set in .collection_collections_btn */
+  cursor: pointer; /* Indicate clickable buttons */
+  display: flex;
+  align-items: center;
+  color: var(--text-color-converse);
+  /* Align button text and icon vertically */
+}
+
+.collection_collections_btn button svg {
+  margin-right: 5px; /* Spacing between icon and text */
+}
+
+.collection_box {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+  margin: 0 auto; /* Spacing above content box */
+  width: 80%; /* Content box width (adjust as needed) */
+  padding: 15px; /* Padding for content box */
+}
+
+/* Assuming DaysComponent has its own styles, you can add them here */
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Reintroduce flex-wrap for buttons on mobile */
+  .collection_collections {
+    width: 90vw;
+    gap: 10px;
+    padding: 10px 5px;
+  }
+
+  .collection_collections_btn {
+    /* Adjust button styles for mobile (optional) */
+    padding: 10px 10px; /* Reduce padding further on mobile */
+    font-size: 0.7rem; /* Decrease button font size further on mobile */
+  }
+}
