@@ -12,7 +12,7 @@
 }
 
 .title-container h1 {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .title-container p {
@@ -21,7 +21,7 @@
 
 @media (max-width: 768px) {
   .title-container h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .title-container p {

@@ -13,6 +13,7 @@ import {
   Filter,
   NFTCard,
   Collection,
+  Follower,
 } from "../../components/z-index.component";
 
 function Home() {
@@ -25,6 +26,7 @@ function Home() {
         heading={"New Collection"}
         paragraph={"Discover NFTs available on the market."}
       />
+      <Follower />
       <Collection />
       <Title
         heading={"Featured NFTs"}

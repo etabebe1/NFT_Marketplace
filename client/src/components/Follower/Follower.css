@@ -1,0 +1,96 @@
+.follower-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  width: 100%;
+  margin: auto;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--color-gray-dark);
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 55px;
+  box-shadow: var(--box-shadow-2);
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 100px;
+}
+
+.tab-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  background: var(--color-gray-dark);
+  border: none;
+  color: var(--text-color-converse);
+  display: flex;
+  align-items: center;
+}
+
+.tab-button.active {
+  background: var(--shadow-dark-2);
+  border: 1px solid var(--color-gray-dark);
+  color: var(--color-gray-dark);
+}
+
+.tab-button svg {
+  margin-right: 5px;
+}
+
+.card-container {
+  width: 100%;
+  /* background: red; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .follower-container {
+    /* width: 100%; */
+    padding:0;
+
+  }
+
+  .tabs-container {
+    width: 90vw;
+    gap: 10px;
+    padding: 5px 10px;
+  }
+
+  .tab-button {
+    padding: 10px 10px;
+    font-size: 0.7rem;
+  }
+
+  .card-container {
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}

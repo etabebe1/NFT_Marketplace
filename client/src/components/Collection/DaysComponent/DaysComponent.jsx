@@ -2,7 +2,7 @@ import React from "react";
 
 // INTERNAL IMPORT
 import "./DaysComponent.css";
-import images from "../../assets/img/z-index.img";
+import images from "../../../assets/img/z-index.img";
 import { MdVerified } from "react-icons/md";
 
 function DaysComponent() {
@@ -55,18 +55,6 @@ function DaysComponent() {
           <div className="value">
             <span className="nft-value">{nftData.nftValue} ETH</span>
           </div>
-
-          {/* <div className="creator-details">
-            <div className="creator-text-container">
-              <span className="creator-text">{nftData.creatorText}</span>
-              <span className="creator-name">{nftData.creatorName}</span>
-              {nftData.isVerified && (
-                <i className="verified-icon">
-                  <MdVerified />
-                </i>
-              )}
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

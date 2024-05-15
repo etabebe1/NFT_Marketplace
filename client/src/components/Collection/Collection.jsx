@@ -45,20 +45,28 @@ function Collection() {
       <div className="collection_title">
         <h2>Top List Creators</h2>
         <div className="collection_collections">
-          <div className="collection_collections_btn">
-            <button onClick={() => openPopular()}>
+          <div
+            className={`collection_collections_btn ${popular && "active"}`}
+            onClick={() => openPopular()}
+          >
+            <button className={popular ? "active" : ""}>
               <IoIosAlarm /> 24 hours
             </button>
           </div>
-          <div className="collection_collections_btn">
-            <button onClick={() => openFollower()}>
+          <div
+            className={`collection_collections_btn ${following && "active"}`}
+            onClick={() => openFollower()}
+          >
+            <button className={following ? "active" : ""}>
               <LiaCalendarAlt /> 7 days
             </button>
           </div>
-          <div className="collection_collections_btn">
-            <button onClick={() => openNews()}>
-              <PiCalendarDotsFill />
-              30 days
+          <div
+            className={`collection_collections_btn ${news && "active"}`}
+            onClick={() => openNews()}
+          >
+            <button className={news ? "active" : ""}>
+              <PiCalendarDotsFill /> 30 days
             </button>
           </div>
         </div>

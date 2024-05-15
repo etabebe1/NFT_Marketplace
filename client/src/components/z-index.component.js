@@ -10,7 +10,9 @@ import Category from "./Category/Category";
 import Filter from "./Filter/Filter";
 import NFTCard from "./NFTCard/NFTCard";
 import Collection from "./Collection/Collection";
-import DaysComponent from "./DaysComponent/DaysComponent";
+import DaysComponent from "./Collection/DaysComponent/DaysComponent";
+import Follower from "./Follower/Follower";
+import FollowerCard from "./FollowerCard/FollowerCard";
 
 export {
   Navbar,
@@ -25,5 +27,7 @@ export {
   Filter,
   NFTCard,
   Collection,
-  DaysComponent
+  DaysComponent,
+  Follower,
+  FollowerCard,
 };
