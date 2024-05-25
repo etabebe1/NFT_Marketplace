@@ -1,12 +1,4 @@
-.NFTcard {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin: auto;
-}
-
-.card_box {
+.audio-item {
   max-width: 340px;
   background-color: #fff;
   box-shadow: var(--box-shadow-2);
@@ -16,26 +8,30 @@
   cursor: pointer;
 }
 
-.card_box_image {
+.audio-item-image {
   padding: 10px;
 }
 
-.card_box_image img {
+.audio-item-image img {
   width: 100%;
   border-radius: 10px;
 }
 
-.card_box_update {
+/* .audio-item-details {
+} */
+
+.audio-item-details-top {
+  width: 100%;
+
   position: absolute;
   top: 5px;
   left: 15px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   align-items: center;
 }
 
-.card_box_update_left_like {
+.audio-item-details-top-left {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -47,7 +43,14 @@
   color: var(--text-color-converse);
 }
 
-.card_box_update_right {
+.audio-item-details-like-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+}
+
+.audio-item-details-top-right {
   transform: skewX(40deg);
   background-color: #fff;
   width: 200px;
@@ -55,7 +58,8 @@
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.card_box_update_right_info {
+
+.audio-item-details-info {
   margin: auto;
   height: 100%;
   padding-block-start: 5px;
@@ -63,61 +67,89 @@
   transform: skewX(-40deg);
 }
 
-.card_box_update_right_info p {
+.audio-item-details-info p {
   font-weight: 600;
 }
 
-.card_box_update_details {
+.audio-item-details-bottom {
   position: absolute;
-  bottom: 5px;
-  left: -20px;
+  bottom: 0;
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 20px;
   justify-content: space-between;
   width: 100%;
-  align-items: center;
+  /* align-items: center; */
 }
 
-.card_box_update_details_price {
-  transform: skewX(40deg);
-  background-color: #fff;
+.audio-player-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.audio-player-container i {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 100px;
+}
+
+.audio-player-container i svg {
+  width: 25px;
+  height: 25px;
+  color: var(--color-gray-dark);
+}
+
+.audio-item-details-price {
+  background: #fff;
   width: 230px;
   height: 75px;
   padding-left: 25px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
+  bottom: 10px;
+  width: 80%;
+  border-radius: 0 15px 0;
 }
 
-.card_box_update_details_price_box {
+.audio-item-details-price-container {
   margin: auto;
   height: 100%;
   padding-block-start: 5px;
   padding-left: 15px;
   text-align: left;
-  transform: skewX(-40deg);
-  /* background: blue; */
 }
 
-.card_box_update_details_price_box h4 {
+.audio-item-details-price-container h4 {
   padding-bottom: 10px;
+  font-size: 15px;
+  color: var(--color-gray-dark);
 }
 
-.card_box_update_details_price_box_container {
+.audio-item-details-price-info {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; gap: 10px;
+  align-items: center;
+  gap: 10px;
 }
 
-.card_box_update_details_price_box_container_bid {
+.audio-item-details-price-bid p {
+  font-size: 15px;
+}
+
+.audio-item-details-price-bid {
   position: relative;
   border: 1px solid var(--color-gray-dark);
   border-radius: 5px;
-  padding: 12px 10px;
+  padding: 13px 10px 7px;
   display: flex;
   align-items: center;
 }
 
-.card_box_update_details_price_box_container_bid small {
+.audio-item-details-price-bid small {
   text-align: center;
   position: absolute;
   top: -9px;
@@ -127,32 +159,17 @@
   padding: 4px 1px;
 }
 
-.card_box_update_details_category {
-  font-size: 1.5rem;
-  color: var(--color-gray-dark);
-}
-
 @media screen and (max-width: 768px) {
-  .NFTcard {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  .card_box_update_right {
+  .audio-item-details-top-right {
     width: 150px;
     height: 45px;
   }
-  .card_box_update_right_info small {
+  .audio-item-details-info small {
     font-size: 11px;
   }
 
-  .card_box_update_right_info p {
+  .audio-item-details-info p {
     font-size: 14px;
     font-weight: 600;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .NFTcard {
-    grid-template-columns: 1fr; /* Single column for small screens */
   }
 }

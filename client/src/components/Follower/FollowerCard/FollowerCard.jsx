@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // INTERNAL IMPORT
 import "./FollowerCard.css";
-import images from "../../assets/img/z-index.img";
+import images from "../../../assets/img/z-index.img";
 import { MdVerified } from "react-icons/md";
 
 function FollowerCard() {
@@ -24,6 +24,7 @@ function FollowerCard() {
           alt="background-images"
           className="background-img"
         />
+        <span className="medal-count">#{"12"}🥇</span>
         <img src={images.user8} className="profile-img" alt="profile_image" />
       </div>
       <div className="follower-details">
@@ -39,8 +40,8 @@ function FollowerCard() {
           </div>
         </div>
 
-        <button className="follow-btn" onClick={() => setFollowing()}>
-          {following ? "Unfollow" : "Follow"}
+        <button className="follow-btn" onClick={() => follow()}>
+          {following ? "Following" : "Follow"}
         </button>
       </div>
     </div>

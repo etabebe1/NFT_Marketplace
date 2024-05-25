@@ -11,7 +11,7 @@ function Hero() {
     <section className="hero-section">
       <div className="hero-content-wrapper">
         <div className="hero-content">
-          <h1>Discover, collect, and sell NFTs {`\u{1F5BC}`}</h1>
+          <h1>Discover, collect, and sell NFTs 🖼️</h1>
           <p>
             Discover the most outstanding NFTs in all topics of life. Create
             your NFTs and sell them.

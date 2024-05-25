@@ -1,0 +1,17 @@
+.audioLive {
+  display: flex;
+  /* width: 100%; */
+  background: blue;
+}
+
+.audioLive_box {
+  display: flex;
+  flex-direction: row;
+}
+.audioLive_box_left {
+  display: flex;
+  gap: 40px;
+}
+
+/* .audioLive_box_right {
+} */

@@ -12,7 +12,10 @@ import NFTCard from "./NFTCard/NFTCard";
 import Collection from "./Collection/Collection";
 import DaysComponent from "./Collection/DaysComponent/DaysComponent";
 import Follower from "./Follower/Follower";
-import FollowerCard from "./FollowerCard/FollowerCard";
+import FollowerCard from "./Follower/FollowerCard/FollowerCard";
+import AudioLive from "./AudioLive/AudioLive";
+import AudioCard from "./AudioLive/AudioCard/AudioCard";
+import AudioCardSmall from "./AudioLive/AudioCardSmall/AudioCardSmall";
 
 export {
   Navbar,
@@ -30,4 +33,7 @@ export {
   DaysComponent,
   Follower,
   FollowerCard,
+  AudioLive,
+  AudioCard,
+  AudioCardSmall,
 };

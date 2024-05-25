@@ -2,20 +2,24 @@
   display: flex;
   flex-direction: column;
   width: 300px;
-  background-color: var(--card-background); 
+  background-color: var(--card-background);
   border-radius: 20px;
-  box-shadow: var(--card-shadow); 
+  box-shadow: var(--card-shadow);
   margin-bottom: 20px;
   cursor: pointer;
 }
 
 .follower-card:hover {
-    box-shadow: var(--box-shadow-2);
+  box-shadow: var(--box-shadow-2);
 }
 
 .background-profile {
   position: relative;
-  height: 150px; 
+  height: 150px;
+  display: flex; /* Added for positioning */
+  flex-direction: column; /* Added for positioning */
+  align-items: center; /* Added for positioning */
+  justify-content: flex-start;
 }
 
 .background-img {
@@ -34,6 +38,17 @@
   width: 70px;
   height: 70px;
   border: 10px solid var(--background-color);
+}
+
+.medal-count {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1rem;
+  background-color: var(--color-gray-dark);
+  color: var(--text-color-converse);
+  padding: 5px 10px;
+  border-radius: 100px;
 }
 
 .follower-details {
