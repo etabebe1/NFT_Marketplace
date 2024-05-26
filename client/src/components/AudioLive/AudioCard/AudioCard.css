@@ -1,5 +1,6 @@
 .audio-item {
   max-width: 340px;
+  min-width: 300px;
   background-color: #fff;
   box-shadow: var(--box-shadow-2);
   border-radius: 10px;
@@ -16,9 +17,6 @@
   width: 100%;
   border-radius: 10px;
 }
-
-/* .audio-item-details {
-} */
 
 .audio-item-details-top {
   width: 100%;
@@ -76,7 +74,7 @@
   bottom: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   justify-content: space-between;
   width: 100%;
   /* align-items: center; */
@@ -124,7 +122,6 @@
 }
 
 .audio-item-details-price-container h4 {
-  padding-bottom: 10px;
   font-size: 15px;
   color: var(--color-gray-dark);
 }
@@ -146,6 +143,7 @@
   border-radius: 5px;
   padding: 13px 10px 7px;
   display: flex;
+  width: 50%;
   align-items: center;
 }
 
@@ -157,6 +155,17 @@
   background-color: var(--color-gray-dark);
   color: var(--text-color-converse);
   padding: 4px 1px;
+  width: 40px;
+  border-radius: 4px;
+}
+
+.audio-item-details-price-stock {
+  padding-inline: 10px;
+}
+
+.audio-item-liked-user {
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (max-width: 768px) {

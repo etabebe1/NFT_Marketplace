@@ -6,13 +6,17 @@ import "./AudioCard.css";
 import images from "../../../assets/img/z-index.img";
 import { IoIosHeart } from "react-icons/io";
 import { IoIosHeartEmpty } from "react-icons/io";
-import { FaImages } from "react-icons/fa";
 import { FiPlay } from "react-icons/fi";
 import { LiaPauseSolid } from "react-icons/lia";
+
+// COMPONENTS
+import { Like } from "../../z-index.component";
 
 function AudioCard() {
   const [like, setLike] = useState(false);
   const [play, setPlay] = useState(false);
+
+  const likedBy = [1, 2, 3];
 
   return (
     <div className="audio-item">
@@ -51,10 +55,15 @@ function AudioCard() {
 
               <div className="audio-item-details-price-info">
                 <div className="audio-item-details-price-bid">
-                  <small>Current Bid</small>
+                  <small>Price</small>
                   <p className="audio-item-details-price-bid-value">1.000ETH</p>
                 </div>
                 <div className="audio-item-details-price-stock">
+                  <div className="audio-item-liked-user">
+                    {likedBy.map((user, i) => {
+                      return <Like key={i + 1} />;
+                    })}
+                  </div>
                   <small className="audio-item-details-price-stock-label">
                     61 in stock
                   </small>

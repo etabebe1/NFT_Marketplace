@@ -16,6 +16,7 @@ import FollowerCard from "./Follower/FollowerCard/FollowerCard";
 import AudioLive from "./AudioLive/AudioLive";
 import AudioCard from "./AudioLive/AudioCard/AudioCard";
 import AudioCardSmall from "./AudioLive/AudioCardSmall/AudioCardSmall";
+import Like from "./Like/Like"
 
 export {
   Navbar,
@@ -36,4 +37,5 @@ export {
   AudioLive,
   AudioCard,
   AudioCardSmall,
+  Like
 };

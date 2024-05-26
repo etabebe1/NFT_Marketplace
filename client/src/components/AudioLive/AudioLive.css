@@ -1,17 +1,83 @@
 .audioLive {
   display: flex;
-  /* width: 100%; */
-  background: blue;
+  width: 80%;
+  margin: auto;
+  margin-block: 40px;
 }
 
 .audioLive_box {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
+
 .audioLive_box_left {
   display: flex;
   gap: 40px;
+  max-width: 720px;
 }
 
-/* .audioLive_box_right {
-} */
+.audioLive_box_right {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 682px) {
+  .audioLive {
+    width: 95%;
+  }
+
+  .audioLive_box {
+    gap: 30px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .audioLive_box_left,
+  .audioLive_box_right {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 682px) and (max-width: 768px) {
+  .audioLive {
+    width: 95%;
+    margin: auto;
+  }
+
+  .audioLive_box {
+    gap: 30px;
+  }
+
+  .audioLive_box_left {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1096px) {
+  .audioLive {
+    width: 90%;
+  }
+
+  .audioLive_box {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .audioLive_box_right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .audioLive_box_left,
+  .audioLive_box_right {
+    margin: auto;
+  }
+}
