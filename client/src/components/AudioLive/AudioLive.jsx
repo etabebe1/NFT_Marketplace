@@ -12,6 +12,9 @@ function AudioLive() {
         <div className="audioLive_box_left">
           <AudioCard />
           <AudioCard />
+          <AudioCard />
+          <AudioCard />
+          <AudioCard />
         </div>
         
         <div className="audioLive_box_right">

@@ -21,7 +21,7 @@ function AudioCard() {
   return (
     <div className="audio-item">
       <div className="audio-item-image">
-        <img src={images.nft_image_1} alt="nft_image" />
+        <img src={images.creatorbackground7} alt="nft_image" />
       </div>
 
       <div className="audio-item-details">

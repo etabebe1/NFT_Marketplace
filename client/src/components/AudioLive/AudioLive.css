@@ -9,12 +9,13 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .audioLive_box_left {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  max-width: 720px;
 }
 
 .audioLive_box_right {
@@ -35,6 +36,11 @@
     flex-direction: column;
   }
 
+  .audioLive_box_left {
+    display: flex;
+    flex-direction: column;
+  }
+
   .audioLive_box_left,
   .audioLive_box_right {
     flex-direction: column;
@@ -50,10 +56,15 @@
 
   .audioLive_box {
     gap: 30px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .audioLive_box_left {
-    flex-direction: column;
+  .audioLive_box_right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
   }
 }
 
