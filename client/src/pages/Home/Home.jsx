@@ -15,6 +15,7 @@ import {
   Collection,
   Follower,
   AudioLive,
+  Slider,
 } from "../../components/z-index.component";
 
 function Home() {
@@ -23,16 +24,23 @@ function Home() {
       <Hero />
       <Service />
       <NFTSlider />
-        <Title
+      <Title
         heading={"Latest Audio Collection"}
         paragraph={"Discover NFTs available on the market."}
-      /> 
+      />
       <AudioLive />
       {/*  <Title
         heading={"New Collection"}
         paragraph={"Discover NFTs available on the market."}
       /> */}
       <Follower />
+
+      <Title
+        heading={"Explore NFTs Videos"}
+        paragraph={"Discover the most outstanding NFT videos."}
+      />
+      <Slider />
+
       <Collection />
       <Title
         heading={"Featured NFTs"}

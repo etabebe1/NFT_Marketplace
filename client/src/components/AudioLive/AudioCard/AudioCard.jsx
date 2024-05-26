@@ -16,8 +16,6 @@ function AudioCard() {
   const [like, setLike] = useState(false);
   const [play, setPlay] = useState(false);
 
-  const likedBy = [1, 2, 3];
-
   return (
     <div className="audio-item">
       <div className="audio-item-image">
@@ -60,9 +58,7 @@ function AudioCard() {
                 </div>
                 <div className="audio-item-details-price-stock">
                   <div className="audio-item-liked-user">
-                    {likedBy.map((user, i) => {
-                      return <Like key={i + 1} />;
-                    })}
+                    <Like />
                   </div>
                   <small className="audio-item-details-price-stock-label">
                     61 in stock

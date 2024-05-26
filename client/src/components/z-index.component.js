@@ -17,6 +17,7 @@ import AudioLive from "./AudioLive/AudioLive";
 import AudioCard from "./AudioLive/AudioCard/AudioCard";
 import AudioCardSmall from "./AudioLive/AudioCardSmall/AudioCardSmall";
 import Like from "./Like/Like"
+import Slider from "./Slider/Slider"
 
 export {
   Navbar,
@@ -37,5 +38,6 @@ export {
   AudioLive,
   AudioCard,
   AudioCardSmall,
-  Like
+  Like,
+  Slider
 };

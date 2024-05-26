@@ -21,6 +21,9 @@ function AudioLive() {
           <AudioCardSmall />
           <AudioCardSmall />
           <AudioCardSmall />
+          <AudioCardSmall />
+          <AudioCardSmall />
+          <AudioCardSmall />
         </div>
       </div>
     </div>

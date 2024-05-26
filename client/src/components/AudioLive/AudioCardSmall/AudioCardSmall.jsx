@@ -11,7 +11,7 @@ import { FiPlay } from "react-icons/fi";
 import { LiaPauseSolid } from "react-icons/lia";
 
 // COMPONENTS
-import {Like} from "../../z-index.component";
+import { Like } from "../../z-index.component";
 
 function AudioCardSmall() {
   const [play, setPlay] = useState(false);
@@ -31,9 +31,7 @@ function AudioCardSmall() {
       <div className="nft-card-details">
         <p className="nft-card-title">NFT music #2321</p>
         <div className="nft-liked-profile-price">
-          {likedBy.map((user, i) => {
-            return <Like key={i + 1} />;
-          })}
+          <Like />
           <div className="nft-music-price">
             <small>price</small>
             <p className="nft-card-price">1.00 ETH</p>
