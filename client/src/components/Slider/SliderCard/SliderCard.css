@@ -7,6 +7,10 @@
   /* background: red; */
 }
 
+.slider-card:hover {
+  box-shadow: var(--box-shadow);
+}
+
 .slider-card .background-profile {
   border-radius: 20px;
   margin-bottom: 20px;
@@ -66,6 +70,7 @@
 
 .slider-card-right {
   flex: 1;
+  color: var(--color-gray-dark);
 }
 
 .slider-card-right p {

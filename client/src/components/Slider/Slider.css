@@ -42,23 +42,38 @@
 
 .sliding-btn {
   display: flex;
-  font-size: 40px;
+  gap: 25px;
+margin-right: 15px;
   transition: opacity 0.2s ease-in-out;
 }
 
-/* .sliding-btn:hover {
-} */
-
-.sliding-btn svg {
-  margin: 0 10px;
+.slider-btn-icon {
+  font-size: 40px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: var(--box-shadow-2);
 }
 
-.sliding-btn svg:hover {
+.slider-btn-icon:hover {
   background: var(--color-gray-dark);
   color: #fff;
-  cursor: pointer;
 }
+
+/* .slider-btn-icon {
+  box-shadow: var(--box-shadow-2);
+  border-radius: 100%;
+  background-color: purple;
+}
+
+
+.sliding-btn svg:hover {
+  color: #fff;
+  cursor: pointer;
+} */
 
 .slider-motion-container {
   cursor: grab;

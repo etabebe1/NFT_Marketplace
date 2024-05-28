@@ -1,0 +1,92 @@
+/* .brand-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.brand-image {
+  width: 50%;
+}
+
+.brand-content {
+  text-align: left;
+  color: var(--text-color);
+  width: 50%;
+} */
+
+.brand-section {
+  display: flex;
+  width: 100%;
+  max-width: 80%;
+  margin: 30px auto;
+  gap: 10px;
+}
+
+.brand-image,
+.brand-content {
+  flex: 1; /* Make each section take up 50% width */
+  padding: 20px;
+}
+
+.brand-image img {
+  width: 100%; /* Adjust image width as needed */
+  display: block; /* Ensures image fills container */
+}
+
+.brand-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--color-gray-dark);
+}
+
+.brand-content img {
+  height: 30px;
+  margin-bottom: 40px;
+}
+
+.brand-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.brand-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Spacing between buttons */
+}
+
+/* Media Queries for Responsive Layout (Optional) */
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .brand-section {
+    flex-direction: column-reverse; /* Stack sections on top of each other */
+  }
+
+  .brand-image,
+  .brand-content {
+    flex: unset; /* Remove forced width for better responsiveness */
+    width: 100%;
+  }
+
+  .brand-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+
+  .brand-content p {
+    font-size: 13px;
+  }
+}

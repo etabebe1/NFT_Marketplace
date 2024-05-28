@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./Slider.css";
 import SliderCard from "./SliderCard/SliderCard";
 import { TfiArrowCircleLeft, TfiArrowCircleRight } from "react-icons/tfi";
-import { motion } from "framer-motion";
+import { motion, animate } from "framer-motion";
 
 function Slider() {
   const sliderCards = [1, 2, 3, 4, 5, 6];
@@ -30,13 +30,16 @@ function Slider() {
 
   // OPTIONAL FUNCTIONS
 
-  const handleScrollLeft = () => {
+  const handleScrollLeft = (e) => {
+    e.preventDefault();
     const { current } = dragSlider;
     const scrollAmount = window.innerWidth > 1800 ? 270 : 210;
     current.scrollLeft -= scrollAmount;
   };
 
-  const handleScrollRight = () => {
+  const handleScrollRight = (e) => {
+    e.preventDefault();
+
     const { current } = dragSlider;
     const scrollAmount = window.innerWidth > 1800 ? 270 : 210;
     current.scrollLeft += scrollAmount;
@@ -51,8 +54,18 @@ function Slider() {
             <div className="slider-text-btn">
               <p>Click on play icon & enjoy NFTs Videos.</p>
               <div className="sliding-btn">
-                <TfiArrowCircleLeft onClick={() => handleScrollLeft()} />
-                <TfiArrowCircleRight onClick={() => handleScrollRight()} />
+                <div
+                  className="slider-btn-icon"
+                  onClick={(e) => handleScrollLeft(e)}
+                >
+                  <TfiArrowCircleLeft />
+                </div>
+                <div
+                  className="slider-btn-icon"
+                  onClick={(e) => handleScrollRight(e)}
+                >
+                  <TfiArrowCircleRight />
+                </div>
               </div>
             </div>
           </div>

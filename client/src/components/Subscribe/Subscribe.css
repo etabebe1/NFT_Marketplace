@@ -9,7 +9,7 @@
 
 .subscribe-content {
   text-align: left;
-  color: var(--text-color);
+  color: var(--color-gray-dark);
   width: 50%;
 }
 
