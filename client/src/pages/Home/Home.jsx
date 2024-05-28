@@ -35,10 +35,7 @@ function Home() {
       /> */}
       <Follower />
 
-      <Title
-        heading={"Explore NFTs Videos"}
-        paragraph={"Discover the most outstanding NFT videos."}
-      />
+      
       <Slider />
 
       <Collection />

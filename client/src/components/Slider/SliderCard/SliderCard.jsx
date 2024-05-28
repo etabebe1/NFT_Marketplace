@@ -4,10 +4,11 @@ import React from "react";
 import "./SliderCard.css";
 
 import images from "../../../assets/img/z-index.img";
+import {motion} from "framer-motion"
 
 function SliderCard() {
   return (
-    <div className="slider-card">
+    <motion.div className="slider-card">
       <div className="background-profile">
         <img
           src={images.creatorbackground10}
@@ -32,7 +33,7 @@ function SliderCard() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
