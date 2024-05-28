@@ -16,7 +16,8 @@ import {
   Follower,
   AudioLive,
   Slider,
-  Brand
+  Brand,
+  Video,
 } from "../../components/z-index.component";
 
 function Home() {
@@ -36,7 +37,6 @@ function Home() {
       /> */}
       <Follower />
 
-      
       <Slider />
 
       <Collection />
@@ -52,7 +52,8 @@ function Home() {
       />
       <Category />
       <Subscribe />
-      <Brand/>
+      <Brand />
+      <Video />
     </div>
   );
 }

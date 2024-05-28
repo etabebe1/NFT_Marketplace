@@ -19,8 +19,8 @@ function Brand() {
         <h1>Earn free crypto with Ciscrypt</h1>
         <p>Ciscrypt is a platform that allows you to earn free crypto.</p>
         <div className="button-container">
-          <Button btnName="Get Started" />
-          <Button btnName="Learn More" />
+          <Button btnName="Create" />
+          <Button btnName="Discover" />
         </div>
       </div>
     </div>

@@ -42,6 +42,7 @@ import nft_image_3 from "./nft-image-3.png";
 import musiceWave from "./musicwave.png";
 import update from "./update.png";
 import earn from "./earn.png";
+import NFTVideo from "./NFTVideo.png";
 
 const images = {
   collection,
@@ -88,6 +89,7 @@ const images = {
   musiceWave,
   update,
   earn,
+  NFTVideo,
 };
 
 export default images;

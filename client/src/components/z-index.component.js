@@ -19,6 +19,7 @@ import AudioCardSmall from "./AudioLive/AudioCardSmall/AudioCardSmall";
 import Like from "./Like/Like";
 import Slider from "./Slider/Slider";
 import Brand from "./Brand/Brand";
+import Video from "./Video/Video";
 
 export {
   Navbar,
@@ -42,4 +43,5 @@ export {
   Like,
   Slider,
   Brand,
+  Video,
 };
