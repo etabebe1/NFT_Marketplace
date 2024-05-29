@@ -1,0 +1,146 @@
+.collection-profile {
+  display: flex;
+  gap: 20px;
+  box-shadow: var(--box-shadow-2);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 80%;
+  max-width: 100%;
+}
+
+.collection-profile-image-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.collection-profile-image-social img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social-links li svg {
+  font-size: 20px;
+  color: var(--color-gray-dark);
+}
+
+.collection-profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.collection-profile-info-text {
+  color: var(--color-gray-dark);
+}
+
+.collection-profile-info h1 {
+  font-size: 2.7rem;
+  width: fit-content;
+}
+
+.collection-profile-info p {
+  font-size: 0.9rem;
+  max-width: 530px;
+}
+
+.market-increments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.market-increment {
+  width: 150px;
+  height: 100px;
+  box-shadow: var(--box-shadow-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  gap: 3px;
+  color: var(--color-gray-dark);
+}
+
+.market-increment p {
+  font-size: 0.9rem;
+}
+
+.market-increment span:nth-child(1) {
+  font-size: 0.9rem;
+}
+
+.market-increment span:nth-child(2) {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.market-increment span:nth-child(3) {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .collection-profile {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .collection-profile-image-social,
+  .collection-profile-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center content on smaller screens */
+  }
+
+  .collection-profile-image-social img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .collection-profile-info h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: unset;
+  }
+  .collection-profile-info p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .market-increments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .market-increment {
+    width: 120px;
+    height: 75px;
+  }
+
+  .market-increment h4 {
+    font-size: 1rem;
+  }
+}

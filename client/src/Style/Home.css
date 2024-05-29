@@ -1,0 +1,9 @@
+.home {
+  margin-block-start: 50px;
+}
+
+@media (max-width: 768px) {
+  .home {
+    margin-block-start: 0px;
+  }
+}

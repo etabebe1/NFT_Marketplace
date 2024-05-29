@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // INTERNAL IMPORT
 import "./Discover.css";
@@ -6,31 +7,31 @@ import "./Discover.css";
 const discoverData = [
   {
     name: "Collection",
-    link: "",
+    link: "/collection",
   },
   {
     name: "Search",
-    link: "",
+    link: "/search",
   },
   {
     name: "Author Profile",
-    link: "",
+    link: "/authorprofile",
   },
   {
     name: "NFT Details",
-    link: "",
+    link: "/nftdetails",
   },
   {
     name: "Account Setting",
-    link: "",
+    link: "/accountsetting",
   },
   {
     name: "Connect Wallet",
-    link: "",
+    link: "/connectwallet",
   },
   {
     name: "Blog",
-    link: "",
+    link: "/blog",
   },
 ];
 
@@ -38,7 +39,9 @@ function Discover() {
   return (
     <ul className="discover-card-list">
       {discoverData.map((list, index) => (
-        <li key={index}>{list.name}</li>
+        <li key={index}>
+          <Link to={list.link}>{list.name}</Link>
+        </li>
       ))}
     </ul>
   );

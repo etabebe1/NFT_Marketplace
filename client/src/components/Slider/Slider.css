@@ -24,7 +24,7 @@
 }
 
 .sliding-header h2 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 3rem;
 }
 
@@ -43,7 +43,7 @@
 .sliding-btn {
   display: flex;
   gap: 25px;
-margin-right: 15px;
+  margin-right: 15px;
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -62,18 +62,6 @@ margin-right: 15px;
   background: var(--color-gray-dark);
   color: #fff;
 }
-
-/* .slider-btn-icon {
-  box-shadow: var(--box-shadow-2);
-  border-radius: 100%;
-  background-color: purple;
-}
-
-
-.sliding-btn svg:hover {
-  color: #fff;
-  cursor: pointer;
-} */
 
 .slider-motion-container {
   cursor: grab;
@@ -95,6 +83,7 @@ margin-right: 15px;
 
   .sliding-header h2 {
     font-size: 2.5rem;
+    margin-bottom: 0.9rem;
   }
 }
 
@@ -108,7 +97,7 @@ margin-right: 15px;
     font-size: 2rem;
   }
   .slider-text-btn {
-    gap: 15px;
+    gap: 5px;
   }
 
   .sliding-header p {
@@ -116,5 +105,18 @@ margin-right: 15px;
   }
   .sliding-btn {
     display: flex;
+    gap: 15px;
+  }
+
+  .slider-btn-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-btn-icon svg {
+    width: 30px;
+    height: 30px;
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 // INTERNAL IMPORT
-import "./Home.css";
+import "../../Style/Home.css";
 
 import {
   Hero,

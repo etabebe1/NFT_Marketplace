@@ -5,7 +5,7 @@ import "./FollowerCard.css";
 import images from "../../../assets/img/z-index.img";
 import { MdVerified } from "react-icons/md";
 
-function FollowerCard() {
+function FollowerCard({ el }) {
   const [following, setFollowing] = useState(true);
 
   const follow = () => {
@@ -20,12 +20,12 @@ function FollowerCard() {
     <div className="follower-card">
       <div className="background-profile">
         <img
-          src={images.creatorbackground9}
+          src={el.background}
           alt="background-images"
           className="background-img"
         />
-        <span className="medal-count">#{"12"}🥇</span>
-        <img src={images.user8} className="profile-img" alt="profile_image" />
+        <span className="medal-count">#{el.rating}🥇</span>
+        <img src={el.user} className="profile-img" alt="profile_image" />
       </div>
       <div className="follower-details">
         <div className="name-value">

@@ -1,15 +1,20 @@
+import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar, Footer } from "./components/z-index.component";
-import { Home } from "./pages/z-index.page";
+import { Home, Collection } from "./pages/z-index.page";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar></Navbar>
-      {/* components here  */}
-      <Home></Home>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/collection" element={<Collection />} />
+        {/* Add more routes for other pages here */}
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

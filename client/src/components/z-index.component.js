@@ -1,3 +1,5 @@
+// FOUNDATION COMPONENTS
+
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 import Button from "./Button/Button";
@@ -21,6 +23,11 @@ import Slider from "./Slider/Slider";
 import Brand from "./Brand/Brand";
 import Video from "./Video/Video";
 
+// PAGE COMPONENT
+import Banner from "./CollectionPage/Banner/Banner";
+import CollectionProfile from "./CollectionPage/CollectionProfile/CollectionProfile";
+
+// FOUNDATION COMPONENTS
 export {
   Navbar,
   Button,
@@ -45,3 +52,6 @@ export {
   Brand,
   Video,
 };
+
+// PAGE COMPONENTS
+export { Banner, CollectionProfile };
