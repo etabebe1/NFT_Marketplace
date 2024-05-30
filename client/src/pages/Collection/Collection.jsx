@@ -5,7 +5,11 @@ import "../../Style/Collection.css";
 import images from "../../assets/img/z-index.img";
 
 // COMPONENTS
-import { Banner, CollectionProfile } from "../../components/z-index.component";
+import {
+  Banner,
+  CollectionProfile,
+  NFTCardTwo,
+} from "../../components/z-index.component";
 import { Slider, Brand, Filter } from "../../components/z-index.component";
 
 function Collection() {
@@ -14,6 +18,7 @@ function Collection() {
       <Banner />
       <CollectionProfile />
       <Filter />
+      <NFTCardTwo />
       <Slider />
       <Brand />
     </div>

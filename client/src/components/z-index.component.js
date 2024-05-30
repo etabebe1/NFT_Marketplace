@@ -22,6 +22,7 @@ import Like from "./Like/Like";
 import Slider from "./Slider/Slider";
 import Brand from "./Brand/Brand";
 import Video from "./Video/Video";
+import NFTCardTwo from "./NFTCardTwo/NFTCardTwo";
 
 // PAGE COMPONENT
 import Banner from "./CollectionPage/Banner/Banner";
@@ -51,6 +52,7 @@ export {
   Slider,
   Brand,
   Video,
+  NFTCardTwo,
 };
 
 // PAGE COMPONENTS

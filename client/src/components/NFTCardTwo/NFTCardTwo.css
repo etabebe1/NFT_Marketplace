@@ -1,0 +1,116 @@
+.nft-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.nft-card-two {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nft-card-two:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.nft-card-two .nft-card-two-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.nft-card-image-top {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+  align-items: center;
+  z-index: 10;
+}
+
+.nft-card-image-top svg {
+  font-size: 20px;
+  color: var(--color-gray-dark);
+}
+
+.nft-card-image-top .like {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background: var(--color-gray-dark);
+  width: 4rem;
+  border-radius: 100px;
+  padding: 4px;
+  color: var(--text-color-converse);
+}
+
+.nft-card-image-top .like svg {
+  font-size: 15px;
+  color: var(--text-color-converse);
+}
+
+.nft-card-two .nft-card-two-image img {
+  width: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+
+.nft-card-two .nft-card-two-data {
+  flex: 1;
+  color: var(--color-gray-dark);
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10px;
+  padding-block: 5px;
+  gap: 5px;
+}
+
+.nft-card-two-data .top-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nft-card-two-data .clone-number {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.nft-card-two-data .bid-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.bid-price .time-remaining {
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 568px) {
+  .nft-card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .nft-card-two {
+    margin-bottom: 20px;
+  }
+}
