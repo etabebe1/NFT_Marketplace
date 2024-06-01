@@ -2,12 +2,12 @@ import React from "react";
 
 // INTERNAL IMPORT
 import "./Banner.css";
-import images from "../../../assets/img/z-index.img";
+import images from "../../assets/img/z-index.img";
 
-function Banner() {
+function Banner({ bannerImage }) {
   return (
     <div className="banner">
-      <img src={images.creatorbackground3} alt="Banner_Image" />
+      <img src={bannerImage} alt="Banner_Image" />
     </div>
   );
 }

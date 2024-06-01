@@ -1,7 +1,7 @@
 import React from "react";
 
 // INTERNAL IMPORT
-import "../../Style/Home.css";
+import "../Style/Home.css";
 
 import {
   Hero,
@@ -18,7 +18,7 @@ import {
   Slider,
   Brand,
   Video,
-} from "../../components/z-index.component";
+} from "../components/z-index.component";
 
 function Home() {
   return (

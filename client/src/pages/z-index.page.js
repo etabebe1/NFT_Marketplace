@@ -1,4 +1,5 @@
-import Home from "./Home/Home";
-import Collection from "./Collection/Collection";
+import Home from "./Home";
+import Collection from "./Collection";
+import Author from "./Author";
 
-export { Home, Collection };
+export { Home, Collection, Author };

@@ -1,5 +1,4 @@
 // FOUNDATION COMPONENTS
-
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 import Button from "./Button/Button";
@@ -25,8 +24,10 @@ import Video from "./Video/Video";
 import NFTCardTwo from "./NFTCardTwo/NFTCardTwo";
 
 // PAGE COMPONENT
-import Banner from "./CollectionPage/Banner/Banner";
+import Banner from "./Banner/Banner";
 import CollectionProfile from "./CollectionPage/CollectionProfile/CollectionProfile";
+import AuthorProfile from "./AuthorPage/AuthorProfile/AuthorProfile";
+import AuthorTaps from "./AuthorPage/AuthorTaps/AuthorTaps";
 
 // FOUNDATION COMPONENTS
 export {
@@ -56,4 +57,4 @@ export {
 };
 
 // PAGE COMPONENTS
-export { Banner, CollectionProfile };
+export { Banner, CollectionProfile, AuthorProfile, AuthorTaps };
