@@ -1,0 +1,119 @@
+.author-taps {
+  display: flex; /* Arrange buttons and dropdown side-by-side */
+  justify-content: space-between;
+  margin: 50px auto;
+  max-width: 80%;
+  gap: 40px;
+}
+
+.author-buttons-container {
+  display: flex;
+  gap: 20px; /* Add spacing between buttons */
+}
+
+.author-tap-btn {
+  padding: 10px 12px;
+  border: 1px solid var(--color-gray-dark);
+  color: var(--color-gray-dark);
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-2);
+  transition: all 0.2s ease;
+  height: fit-content;
+  width: 7rem;
+}
+
+.author-tap-btn:hover {
+  background: var(--color-gray-dark);
+  color: #fff;
+}
+
+.author-tap-btn.active {
+  background: var(--color-gray-dark);
+  color: #fff;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding: 12px 20px;
+  border-radius: 100px;
+  border: 1px solid var(--color-gray-dark);
+  color: var(--color-gray-dark);
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-width: 182px;
+  transition: border-color 0.2s ease;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 150%;
+  left: 0;
+  box-shadow: var(--box-shadow-2);
+  background: var(--background-color);
+  border-radius: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  max-height: 200px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.dropdown-list li {
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-gray-dark);
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-list li:hover {
+  background-color: var(--color-gray-dark);
+  color: #fff;
+}
+
+@media screen and (max-width: 682px) {
+  .author-taps {
+    flex-direction: column;
+  }
+
+  .author-buttons-container {
+    flex-wrap: wrap;
+  }
+
+  .dropdown-container {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 682px) and (max-width: 994px) {
+  .author-buttons-container {
+    flex-wrap: wrap;
+  }
+
+  .dropdown-container {
+    width: 50%;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+  }
+}

@@ -16,6 +16,7 @@ import { MdCloudUpload } from "react-icons/md";
 import { MdVerified } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { MdReportProblem } from "react-icons/md";
+import { FaCheck } from "react-icons/fa6";
 
 // COMPONENTS
 import { Button } from "../../z-index.component";

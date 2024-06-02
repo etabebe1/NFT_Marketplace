@@ -9,6 +9,7 @@
   width: 80%;
   max-width: 100%;
   position: relative;
+  justify-content: space-between;
 }
 
 .img-description {
@@ -112,7 +113,7 @@
 .author-connect {
   display: flex;
   height: fit-content;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 15px;
 }
@@ -226,6 +227,10 @@
 
   .author-address {
     width: 100%;
+    justify-content: center;
+  }
+
+  .social-links {
     justify-content: center;
   }
 
