@@ -8,6 +8,8 @@ import { MdVerified } from "react-icons/md";
 function FollowerCard({ el }) {
   const [following, setFollowing] = useState(true);
 
+  // console.log(el);
+
   const follow = () => {
     if (!following) {
       setFollowing(true);

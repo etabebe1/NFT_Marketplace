@@ -7,7 +7,13 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaCheck } from "react-icons/fa6";
 
-function AuthorTaps({ collectables, created, like, follower, following }) {
+function AuthorTaps({
+  setCollectibles,
+  setCreated,
+  setLike,
+  setFollower,
+  setFollowing,
+}) {
   const [openList, setOpenList] = useState(false);
   const [activeBtn, setActiveBtn] = useState(0);
   const [selectedMenu, setSelectedMenu] = useState("Most Recent");
@@ -19,12 +25,50 @@ function AuthorTaps({ collectables, created, like, follower, following }) {
     "Most Viewed",
   ];
 
-  const handleButtonClick = (index) => {
-    setActiveBtn(index);
-  };
-
   const toggleDropdown = () => {
     setOpenList(!openList);
+  };
+
+  const openTab = (e) => {
+    const btnText = e.target.innerText;
+    // console.log(btnText);
+
+    if (btnText === "Collectables") {
+      setCollectibles(true);
+      setCreated(false);
+      setLike(false);
+      setFollower(false);
+      setFollowing(false);
+      setActiveBtn(0);
+    } else if (btnText === "Created") {
+      setCollectibles(false);
+      setCreated(true);
+      setLike(false);
+      setFollower(false);
+      setFollowing(false);
+      setActiveBtn(1);
+    } else if (btnText === "Liked") {
+      setCollectibles(false);
+      setCreated(false);
+      setLike(true);
+      setFollower(false);
+      setFollowing(false);
+      setActiveBtn(2);
+    } else if (btnText === "Followers") {
+      setCollectibles(false);
+      setCreated(false);
+      setLike(false);
+      setFollower(true);
+      setFollowing(false);
+      setActiveBtn(4);
+    } else if (btnText === "Following") {
+      setCollectibles(false);
+      setCreated(false);
+      setLike(false);
+      setFollower(false);
+      setFollowing(true);
+      setActiveBtn(3);
+    }
   };
 
   const handleMenuSelect = (item) => {
@@ -32,41 +76,39 @@ function AuthorTaps({ collectables, created, like, follower, following }) {
     setOpenList(false);
   };
 
-  const renderDropdownItems = () => {
-    return listArray.map((item, index) => (
-      <li key={index} onClick={() => handleMenuSelect(item)}>
-        {item}
-        {selectedMenu === item && <FaCheck />}
-      </li>
-    ));
-  };
-
   return (
     <div className="author-taps">
       <div className="author-buttons-container">
         {["Collectables", "Created", "Liked", "Following", "Followers"].map(
-          (btnText, index) => (
+          (btnText, i) => (
             <button
-              key={index}
-              className={`author-tap-btn ${
-                activeBtn === index ? "active" : ""
-              }`}
-              onClick={() => {
-                handleButtonClick(index);
-                console.log(index);
-              }}
+              key={i + 1}
+              className={`author-tap-btn ${activeBtn === i ? "active" : ""}`}
+              onClick={(e) => openTab(e)}
             >
               {btnText}
             </button>
           )
         )}
       </div>
-      
+
       <div className="dropdown-container">
         <button className="dropdown-toggle" onClick={toggleDropdown}>
           {selectedMenu} {openList ? <IoIosArrowUp /> : <IoIosArrowDown />}
         </button>
-        {openList && <ul className="dropdown-list">{renderDropdownItems()}</ul>}
+
+        {openList && (
+          <ul className="dropdown-list">
+            {listArray.map((el, i) => {
+              return (
+                <li key={i + 1} onClick={() => handleMenuSelect(el)}>
+                  {el}
+                  {selectedMenu === el && <FaCheck />}
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </div>
     </div>
   );

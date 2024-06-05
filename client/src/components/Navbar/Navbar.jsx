@@ -26,7 +26,7 @@ function Navbar() {
   const openMenu = (e) => {
     const elementText = e.target.innerText;
 
-    console.log(elementText);
+    // console.log(elementText);
 
     if (elementText === "Discover") {
       setDiscover(!discover);

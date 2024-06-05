@@ -1,5 +1,5 @@
 .author-taps {
-  display: flex; /* Arrange buttons and dropdown side-by-side */
+  display: flex;
   justify-content: space-between;
   margin: 50px auto;
   max-width: 80%;
@@ -8,7 +8,7 @@
 
 .author-buttons-container {
   display: flex;
-  gap: 20px; /* Add spacing between buttons */
+  gap: 20px;
 }
 
 .author-tap-btn {
@@ -51,7 +51,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  min-width: 182px;
+  min-width: 184px;
   transition: border-color 0.2s ease;
 }
 
@@ -69,6 +69,7 @@
   max-height: 200px;
   width: 100%;
   overflow-y: auto;
+  z-index: 99;
 }
 
 .dropdown-list li {
@@ -115,5 +116,9 @@
 
   .dropdown-toggle {
     width: 100%;
+  }
+
+  .dropdown-list {
+    top: 100%;
   }
 }

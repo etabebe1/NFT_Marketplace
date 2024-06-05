@@ -13,8 +13,6 @@ import { IoMdAlarm } from "react-icons/io";
 import { Like } from "../z-index.component";
 
 function NFTCardTwo({ NFTData }) {
-  const NFTCardData = [1, 2, 3, 4, 5, 6, 7, 8];
-
   const [like, setLike] = useState(true);
 
   const likeNFT = () => {
@@ -27,10 +25,10 @@ function NFTCardTwo({ NFTData }) {
 
   return (
     <div className="nft-card-container">
-      {NFTCardData.map((el, i) => (
-        <div class="nft-card-two" key={i + 1}>
-          <div class="nft-card-two-image">
-            <img src={images.nft_1} alt="nft_image" />
+      {NFTData.map((el, i) => (
+        <div className="nft-card-two" key={i + 1}>
+          <div className="nft-card-two-image">
+            <img src={el} alt="nft_image" />
             <div className="nft-card-image-top" onClick={() => likeNFT()}>
               <FaImages />
               <div className="like">
@@ -39,7 +37,7 @@ function NFTCardTwo({ NFTData }) {
               </div>
             </div>
           </div>
-          <div class="nft-card-two-data">
+          <div className="nft-card-two-data">
             <div className="top-like">
               <Like />
               <span className="liked-by">34</span>

@@ -9,8 +9,9 @@ import {
   AuthorProfile,
   AuthorTaps,
   Title,
-  FollowerCard,
+  Brand,
 } from "../components/z-index.component";
+import AuthorNFTCardBox from "../components/AuthorPage/AuthorNFTCardBox/AuthorNFTCardBox";
 
 function Author() {
   const cardData = {
@@ -133,11 +134,20 @@ function Author() {
   const [follower, setFollower] = useState(false);
   const [following, setFollowing] = useState(false);
 
+  // console.log(created);
+
   return (
     <div className="author-page">
       <Banner bannerImage={images.creatorbackground5} />
       <AuthorProfile />
       <AuthorTaps
+        setCollectibles={setCollectibles}
+        setCreated={setCreated}
+        setLike={setLike}
+        setFollower={setFollower}
+        setFollowing={setFollowing}
+      />
+      <AuthorNFTCardBox
         collectables={collectables}
         created={created}
         like={like}
@@ -152,6 +162,7 @@ function Author() {
       {/* {cardData.popular.map((el, i) => (
         <FollowerCard el={el} key={i + i} />
       ))} */}
+      <Brand />
     </div>
   );
 }

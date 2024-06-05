@@ -1,0 +1,39 @@
+.AuthorNFTCardBox {
+  width: 80%;
+  /* background: red; */
+  width: fit-content;
+  margin: auto;
+}
+
+.follow-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (max-width: 1021px) {
+  .AuthorNFTCardBox {
+    width: fit-content;
+    margin: 0 auto;
+    padding-inline: 1rem;
+  }
+
+  .follow-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .AuthorNFTCardBox {
+    padding-inline: 0.5rem;
+    width: 100%;
+  }
+  .follow-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* 1021 */

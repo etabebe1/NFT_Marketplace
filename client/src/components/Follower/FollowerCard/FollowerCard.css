@@ -16,9 +16,9 @@
 .background-profile {
   position: relative;
   height: 150px;
-  display: flex; /* Added for positioning */
-  flex-direction: column; /* Added for positioning */
-  align-items: center; /* Added for positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
 }
 
@@ -57,6 +57,7 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
+  color: var(--color-gray-dark);
 }
 
 .name-value {
