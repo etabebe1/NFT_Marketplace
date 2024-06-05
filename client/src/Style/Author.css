@@ -1,0 +1,29 @@
+.author-page {
+}
+
+.author-box-popular {
+  margin: 0 auto;
+  gap: 2rem;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1021px) {
+  .author-box-popular {
+    width: fit-content;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .author-box-popular {
+    padding-inline: 0.5rem;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

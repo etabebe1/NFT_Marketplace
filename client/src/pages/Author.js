@@ -10,6 +10,7 @@ import {
   AuthorTaps,
   Title,
   Brand,
+  FollowerCard,
 } from "../components/z-index.component";
 import AuthorNFTCardBox from "../components/AuthorPage/AuthorNFTCardBox/AuthorNFTCardBox";
 
@@ -159,9 +160,11 @@ function Author() {
         paragraph={"Click on music icon and enjoy NFT music or audio"}
       />
 
-      {/* {cardData.popular.map((el, i) => (
-        <FollowerCard el={el} key={i + i} />
-      ))} */}
+      <div className="author-box-popular">
+        {cardData.popular.map((el, i) => (
+          <FollowerCard el={el} key={i + i} />
+        ))}
+      </div>
       <Brand />
     </div>
   );
