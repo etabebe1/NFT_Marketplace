@@ -1,20 +1,20 @@
 import React from "react";
 
 // INTERNAL IMPORT
-import "../Style/Collection.css";
+import "../Style/Search.css";
 import images from "../assets/img/z-index.img";
 
-// COMPONENTS
+// COMPONENT
 import {
-  Banner,
-  NFTCardTwo,
   Slider,
   Brand,
   Filter,
+  NFTCardTwo,
+  Banner,
 } from "../components/z-index.component";
-import { CollectionProfile } from "../components/z-index.component.page";
+import { SearchBar } from "../components/z-index.component.page";
 
-function Collection() {
+function Search() {
   const NFTDataArray = [
     images.nft_image_2,
     images.nft_image_1,
@@ -26,9 +26,9 @@ function Collection() {
   ];
 
   return (
-    <div className="collection-page">
-      <Banner bannerImage={images.creatorbackground3} />
-      <CollectionProfile />
+    <div className="search-page">
+      <Banner bannerImage={images.creatorbackground8} />
+      <SearchBar />
       <Filter />
       <NFTCardTwo NFTData={NFTDataArray} />
       <Slider />
@@ -37,4 +37,4 @@ function Collection() {
   );
 }
 
-export default Collection;
+export default Search;

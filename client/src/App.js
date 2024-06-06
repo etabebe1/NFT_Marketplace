@@ -2,16 +2,17 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar, Footer } from "./components/z-index.component";
-import { Home, Collection, Author } from "./pages/z-index.page";
+import { Home, Collection, Author, Search } from "./pages/z-index.page";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        {/* <Route path="/" element={<Home />} />
-        <Route path="/collection" element={<Collection />} /> */}
-        <Route path="/" element={<Author />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/author" element={<Author />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
       <Footer />
     </Router>

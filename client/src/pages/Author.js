@@ -6,13 +6,15 @@ import images from "../assets/img/z-index.img";
 
 import {
   Banner,
-  AuthorProfile,
-  AuthorTaps,
   Title,
   Brand,
   FollowerCard,
 } from "../components/z-index.component";
 import AuthorNFTCardBox from "../components/AuthorPage/AuthorNFTCardBox/AuthorNFTCardBox";
+import {
+  AuthorProfile,
+  AuthorTaps,
+} from "../components/z-index.component.page";
 
 function Author() {
   const cardData = {

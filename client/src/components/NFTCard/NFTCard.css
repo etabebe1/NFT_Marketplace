@@ -4,6 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin: auto;
+  background: red;
 }
 
 .card_box {
@@ -105,7 +106,8 @@
 .card_box_update_details_price_box_container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; gap: 10px;
+  align-items: flex-end;
+  gap: 10px;
 }
 
 .card_box_update_details_price_box_container_bid {

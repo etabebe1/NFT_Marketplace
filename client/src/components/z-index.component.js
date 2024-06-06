@@ -22,12 +22,7 @@ import Slider from "./Slider/Slider";
 import Brand from "./Brand/Brand";
 import Video from "./Video/Video";
 import NFTCardTwo from "./NFTCardTwo/NFTCardTwo";
-
-// PAGE COMPONENT
 import Banner from "./Banner/Banner";
-import CollectionProfile from "./CollectionPage/CollectionProfile/CollectionProfile";
-import AuthorProfile from "./AuthorPage/AuthorProfile/AuthorProfile";
-import AuthorTaps from "./AuthorPage/AuthorTaps/AuthorTaps";
 
 // FOUNDATION COMPONENTS
 export {
@@ -54,7 +49,5 @@ export {
   Brand,
   Video,
   NFTCardTwo,
+  Banner,
 };
-
-// PAGE COMPONENTS
-export { Banner, CollectionProfile, AuthorProfile, AuthorTaps };
