@@ -1,0 +1,217 @@
+.nft-descriptions {
+}
+
+.description-container {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Part One Styles */
+
+.virtual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color: var(--color-gray-dark);
+  position: relative;
+}
+
+.virtual p {
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #fff;
+  background: var(--color-gray-dark);
+  padding: 5px 10px;
+  border-radius: 100px;
+  box-shadow: var(--box-shadow-2);
+}
+
+.share-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: red;
+}
+
+.share-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px; /* Adjust spacing between icons */
+  color: var(--icon-color); /* Define a variable for icon color */
+}
+
+.social-link-card {
+  /* position: absolute; */
+  /* top: 2rem; */
+  /* top: calc(100% + 5px); */
+  /* right: 0; */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  display: none; /* Initially hidden */
+}
+
+.NFTDescription.active .social-link-card {
+  display: block; /* Show social links on click */
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.social-link i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--social-icon-color); /* Define a variable for social icon color */
+}
+
+.social-link p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: var(--text-color); /* Define a variable for text color */
+}
+
+/* Part Two Styles */
+
+.title-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--text-color); /* Define a variable for text color */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-details p {
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: var(--text-color); /* Define a variable for text color */
+}
+
+.user-details span {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-color); /* Define a variable for text color */
+}
+
+.user-details span svg {
+  margin-right: 5px;
+  color: var(--verified-color); /* Define a variable for verified badge color */
+}
+
+/* Part Three Styles */
+
+.auction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.auction p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: var(--text-color); /* Define a variable for text color */
+}
+
+.auction p svg {
+  margin-right: 5px;
+  color: var(--icon-color); /* Define a variable for icon color */
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Add spacing between timer sections */
+}
+
+.timer div {
+  text-align: center;
+}
+
+.timer div h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--text-color); /* Define a variable for text color */
+}
+
+.timer div p {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: var(--sub-text-color); /* Define a variable for subtitle color */
+}
+
+/* Part Four Styles */
+
+.bid-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bid-price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--border-color); /* Define a variable for border color */
+  border-radius: 5px;
+}
+
+.bid-price-box small {
+  font-size: 12px;
+  color: var(--sub-text-color); /* Define a variable for subtitle color */
+  margin-bottom: 5px;
+}
+
+.bid-price-box p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-color); /* Define a variable for text color */
+}
+
+.bid-price-stock {
+  text-align: right;
+  font-size: 12px;
+  color: var(--sub-text-color); /* Define a variable for subtitle color */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}

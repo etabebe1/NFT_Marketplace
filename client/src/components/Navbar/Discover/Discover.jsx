@@ -19,7 +19,7 @@ const discoverData = [
   },
   {
     name: "NFT Details",
-    link: "/nftdetails",
+    link: "/nft-details",
   },
   {
     name: "Account Setting",

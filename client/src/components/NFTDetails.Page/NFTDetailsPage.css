@@ -1,0 +1,10 @@
+.nft-details {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nft-details-components {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}

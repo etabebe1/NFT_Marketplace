@@ -1,0 +1,94 @@
+.nft-img-accordion {
+  /* background: red; */
+}
+
+.nft-details-img {
+  position: relative;
+  /* background: blue; */
+  /* width: 150%; */
+}
+
+.nft-details-img-overlay {
+  position: absolute;
+  top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.nft-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.img-icon svg,
+.heart-icon svg {
+  font-size: 20px;
+  color: var(--color-gray-dark);
+}
+
+.heart-icon svg {
+  color: #fff;
+  cursor: pointer;
+}
+.nft-like-button {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: #fff;
+  gap: 10px;
+  background: var(--color-gray-dark);
+  padding: 5px 10px 1px;
+  border-radius: 100px;
+}
+
+.nft-details-accordion {
+  margin-top: 15px;
+}
+
+.nft-details-section {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.title-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #cccccca0;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.title-arrow i svg {
+  color: var(--color-gray-dark);
+}
+
+.nft-details-title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: var(--color-gray-dark);
+}
+
+.nft-details-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  font-size: 13px;
+  color: var(--color-gray-dark);
+  padding: 0px 20px;
+  margin-top: 5px;
+}
+
+.nft-details-section.active .nft-details-content {
+  max-height: 1000px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-icon {
+  float: right;
+  font-size: 18px;
+  color: #ccc;
+  transition: transform 0.3s ease-in-out;
+}
