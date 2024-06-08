@@ -110,7 +110,7 @@ function Navbar() {
             </p>
 
             {discover && (
-              <div className="navbar-right-discover-box absolute">
+              <div className="navbar-right-discover-box menu-card">
                 <Discover></Discover>
               </div>
             )}
@@ -123,7 +123,7 @@ function Navbar() {
             </p>
 
             {helpCenter && (
-              <div className="navbar-right-help-center-box absolute">
+              <div className="navbar-right-help-center-box menu-card">
                 <HelpCenter></HelpCenter>
               </div>
             )}
@@ -134,7 +134,7 @@ function Navbar() {
             <FaBell onClick={() => openNotification()}></FaBell>
 
             {notification && (
-              <div className="absolute notification-left">
+              <div className="menu-card notification-left">
                 <Notification></Notification>
               </div>
             )}
@@ -155,7 +155,7 @@ function Navbar() {
             />
 
             {profile && (
-              <div className="absolute to-right center-on-mobile">
+              <div className="menu-card to-right center-on-mobile">
                 <Profile></Profile>
               </div>
             )}

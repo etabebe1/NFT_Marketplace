@@ -39,7 +39,7 @@ function NFTDetailsImg() {
     <div className="nft-img-accordion">
       {/* Image with overlay */}
       <div className="nft-details-img">
-        <img src={images.nft_image_3} alt="NFT_preview" className="nft-image" />
+        <img src={images.nft_image_1} alt="NFT_preview" className="nft-image" />
         <div className="nft-details-img-overlay">
           <i className="img-icon">
             <FaImages />

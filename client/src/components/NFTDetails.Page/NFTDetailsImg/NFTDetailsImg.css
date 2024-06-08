@@ -92,3 +92,18 @@
   color: #ccc;
   transition: transform 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 974px) {
+  .nft-details-img {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .nft-details-img-overlay {
+    justify-content: space-between;
+    padding-inline: 2rem;
+  }
+
+  .nft-details-img-overlay svg {
+    font-size: 16px;
+  }
+}

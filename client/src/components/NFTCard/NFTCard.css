@@ -4,7 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin: auto;
-  background: red;
+  /* background: red; */
 }
 
 .card_box {

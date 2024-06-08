@@ -1,6 +1,5 @@
 .btn {
   padding: 10px 15px;
-  border: none;
   border-radius: 100px;
   background-color: var(--color-gray-dark);
   border: 1px solid var(--color-gray-dark);
@@ -9,7 +8,12 @@
   cursor: pointer;
   margin-right: 10px;
   width: fit-content;
+  min-width: 132px;
   font-size: 0.9rem;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover {

@@ -7,7 +7,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
   background-color: rgba(var(--background-color), 0.8);
   backdrop-filter: blur(5px);
   transition: all 0.3s ease;
@@ -20,6 +19,7 @@
   padding: 10px 20px;
   margin: 0 auto;
   max-width: 1100px;
+  z-index: 999;
 }
 
 .navbar-left-right-container {
@@ -58,7 +58,7 @@
   padding: 10px 15px;
   border: none;
   border-radius: 100px;
-  width: 250px;
+  max-width: 210px;
   outline: none;
 }
 
@@ -85,6 +85,9 @@
   color: var(--text-color);
   font-weight: 400;
   cursor: pointer;
+  min-width: 80px;
+  /* background: red; */
+  text-align: center;
 }
 
 .notification {
@@ -105,19 +108,14 @@
   display: none;
 }
 
-.absolute {
+.menu-card {
   position: absolute;
-  top: 50px;
+  top: 3rem;
+  z-index: 999;
 }
 
-.absolute.to-right {
-  position: absolute;
+.menu-card.to-right {
   right: 0;
-}
-
-.absolute.to-left {
-  position: absolute;
-  left: 0;
 }
 
 .sidebar-container {
@@ -134,10 +132,6 @@
   .navbar-right-help-center,
   .nav-btn {
     display: none;
-  }
-
-  .navbar-right {
-    gap: 10px;
   }
 
   .menuIcon {
@@ -166,20 +160,21 @@
   }
 
   .navbar-right {
-    position: static;
+    position: relative;
+    gap: 10px;
   }
 
-  .absolute.notification-left {
+  .menu-card.notification-left {
     position: absolute;
-    top: 32%;
-    left: 50%;
+    top: 15rem;
+    left: 0;
     transform: translate(-50%, -50%);
   }
 
-  .absolute.to-right {
+  .menu-card.to-right {
     position: absolute;
-    top: 32%;
-    left: 50%;
+    top: 15rem;
+    left: 0;
     transform: translate(-50%, -50%);
   }
 
@@ -187,5 +182,32 @@
     width: fit-content;
     left: initial;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 890px) {
+  .navbar-right {
+    gap: 0;
+    font-size: 14px;
+  }
+
+  .notification svg {
+    font: 16px;
+  }
+
+  .menu-card.notification-left {
+    right: 1rem;
+  }
+
+  .menu-card.to-right {
+    right: 1rem;
+  }
+}
+
+@media screen and (min-width: 890px) and (max-width: 942px) {
+  .navbar-right {
+    position: relative;
+    gap: 10px;
+    font-size: 16px;
   }
 }

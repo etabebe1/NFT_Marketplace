@@ -1,10 +1,11 @@
 import React from "react";
 import "./Button.css";
 
-function Button({ btnName, handelClick }) {
+function Button({ btnName, handelClick, icon }) {
   return (
     <div className="btn" onClick={handelClick}>
-      {btnName}
+      <span>{icon}</span>
+      <span>{btnName}</span>
     </div>
   );
 }

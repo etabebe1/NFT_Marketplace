@@ -1,10 +1,28 @@
 .nft-details {
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .nft-details-components {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+
+@media screen and (max-width: 848px) {
+  .nft-details {
+    overflow: hidden;
+  }
+
+  .nft-details-components {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 974px) {
+  .nft-details {
+    width: 95%;
+  }
 }
