@@ -7,6 +7,7 @@ import NFTDescription from "./NFTDetails.Page/NFTDescription/NFTDescription";
 import NFTDetailsImg from "./NFTDetails.Page/NFTDetailsImg/NFTDetailsImg";
 import NFTTabs from "./NFTDetails.Page/NFTTabs/NFTTabs";
 import NFTDetailsPage from "./NFTDetails.Page/NFTDetailsPage";
+import Form from "./Account.Page/Form/From";
 
 // PAGE COMPONENTS
 export {
@@ -18,4 +19,5 @@ export {
   NFTDetailsImg,
   NFTTabs,
   NFTDetailsPage,
+  Form,
 };

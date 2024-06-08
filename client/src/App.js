@@ -8,6 +8,7 @@ import {
   Author,
   Search,
   NFTDetails,
+  Account,
 } from "./pages/z-index.page";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/author" element={<Author />} />
         <Route path="/search" element={<Search />} />
         <Route path="/nft-details" element={<NFTDetails />} />
+        <Route path="/settings" element={<Account />} />
       </Routes>
       <Footer />
     </Router>

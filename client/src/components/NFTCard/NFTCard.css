@@ -48,6 +48,10 @@
   color: var(--text-color-converse);
 }
 
+.card_box_update_left_like p {
+  color: white;
+}
+
 .card_box_update_right {
   transform: skewX(40deg);
   background-color: #fff;

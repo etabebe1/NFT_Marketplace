@@ -42,6 +42,10 @@
   color: var(--text-color-converse);
 }
 
+.audio-item-details-top-left p {
+  color: #fff;
+}
+
 .audio-item-details-like-container {
   display: flex;
   gap: 10px;

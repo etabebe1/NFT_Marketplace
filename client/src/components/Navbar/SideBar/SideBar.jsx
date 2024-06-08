@@ -144,8 +144,11 @@ function SideBar({ setOpenSideMenu }) {
 
       {/* Action buttons section */}
       <div className="sidebar-actions">
-        <Button btnName={"Create"}></Button>
-        <Button btnName={"Connect Wallet"}></Button>
+        <Button btnName={"Create"} btnComponent={"sideBar-btn"}></Button>
+        <Button
+          btnName={"Connect Wallet"}
+          btnComponent={"sideBar-btn"}
+        ></Button>
       </div>
     </div>
   );
