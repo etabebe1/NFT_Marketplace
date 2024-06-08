@@ -18,12 +18,13 @@
 
 .btn.sideBar-btn {
   min-width: 115px;
+  width: 100%;
 }
 
 .btn:hover {
   background-color: var(--background-color);
   border: 1px solid var(--color-gray-dark);
-  color: var(--text-color);
+  color: var(--color-gray-dark);
 }
 
 @media (max-width: 768px) {

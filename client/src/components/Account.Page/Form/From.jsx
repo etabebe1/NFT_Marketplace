@@ -151,7 +151,7 @@ function From() {
 
           {/* UPDATE BUTTON */}
           <div className="update-button-container">
-            <Button btnName={"Update Profile"} />
+            <Button btnName={"Update Profile"} btnComponent={"sideBar-btn"} />
           </div>
         </div>
       </form>
