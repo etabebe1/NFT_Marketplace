@@ -198,7 +198,7 @@ function NFTDescription() {
       },
       {
         title: "NFTDetailsPage - BearX #57234",
-        profile: images.user11, // Replace with actual image URL
+        profile: images.user1, // Replace with actual image URL
         currentBidAmount: 1000,
         bidderUsername: "John Doe",
         bidDate: "Jun 08",

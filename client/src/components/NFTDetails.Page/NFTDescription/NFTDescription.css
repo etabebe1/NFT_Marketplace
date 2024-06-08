@@ -1,4 +1,5 @@
 .nft-descriptions {
+  margin: 1rem auto;
 }
 
 .description-container {
@@ -239,5 +240,4 @@
 }
 
 @media screen and (max-width: 974px) {
-  
 }
